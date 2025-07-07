@@ -15,125 +15,7 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
-    <!-- Custom Styles -->
-    <style>
-      /* Travel Theme Custom Colors */
-      :root {
-        --primary: 210 85% 45%;
-        --primary-foreground: 0 0% 100%;
-        --secondary: 155 60% 45%;
-        --secondary-foreground: 0 0% 100%;
-        --accent: 30 90% 60%;
-        --accent-foreground: 0 0% 100%;
-        --muted: 210 40% 96%;
-        --muted-foreground: 220 15% 55%;
-        --background: 0 0% 100%;
-        --foreground: 220 20% 15%;
-        --card: 0 0% 100%;
-        --border: 220 13% 91%;
-      }
-
-      .gradient-hero {
-        background: linear-gradient(135deg, hsl(210 85% 45%), hsl(155 60% 45%));
-      }
-
-      .gradient-sunset {
-        background: linear-gradient(135deg, hsl(30 90% 60%), hsl(25 85% 65%));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      .shadow-travel {
-        box-shadow: 0 10px 40px -10px hsl(210 85% 45% / 0.3);
-      }
-
-      .shadow-hero {
-        box-shadow: 0 20px 60px -10px hsl(210 85% 45% / 0.4);
-      }
-
-      /* Animations */
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes slideInLeft {
-        from {
-          opacity: 0;
-          transform: translateX(-50px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-
-      @keyframes slideInRight {
-        from {
-          opacity: 0;
-          transform: translateX(50px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-
-      @keyframes float {
-        0%,
-        100% {
-          transform: translateY(0px);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
-      }
-
-      .animate-fade-in {
-        animation: fadeIn 0.8s ease-out;
-      }
-      .animate-slide-in-left {
-        animation: slideInLeft 0.8s ease-out;
-      }
-      .animate-slide-in-right {
-        animation: slideInRight 0.8s ease-out;
-      }
-      .animate-float {
-        animation: float 3s ease-in-out infinite;
-      }
-
-      /* Smooth scrolling */
-      html {
-        scroll-behavior: smooth;
-      }
-
-      /* Mobile menu transition */
-      .mobile-menu {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        transition: all 0.3s ease-in-out;
-      }
-
-      .mobile-menu.active {
-        max-height: 300px;
-        opacity: 1;
-      }
-
-      /* Hero background */
-      .bg-hero {
-        background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80');
-        background-size: cover;
-        background-position: center;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-white text-gray-800">
     <!-- Navigation -->
@@ -334,8 +216,8 @@
               </div>
               <h3 class="text-xl font-bold mb-2">Travel Booking</h3>
               <p class="text-gray-600 mb-4">
-                Dapatkan tiket travel dengan harga terbaik ke berbagai
-                destinasi domestik dan internasional.
+                Dapatkan tiket travel dengan harga terbaik ke berbagai destinasi
+                domestik dan internasional.
               </p>
             </div>
             <ul class="space-y-2 mb-6">
@@ -359,7 +241,6 @@
             </button> -->
           </div>
 
-       
           <!-- Service 5 -->
           <div
             class="bg-white rounded-xl p-6 shadow-lg hover:shadow-travel transition-all duration-300 hover:-translate-y-2 animate-fade-in group"
